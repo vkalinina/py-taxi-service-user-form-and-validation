@@ -44,12 +44,12 @@ urlpatterns = [
     path("cars/", CarListView.as_view(), name="car-list"),
     path("cars/<int:pk>/", CarDetailView.as_view(), name="car-detail"),
     path(
-        "car/<int:pk>/assign/",
+        "cars/<int:pk>/assign/",
         views.assign_driver,
         name="car-assign-driver"
     ),
     path(
-        "car/<int:pk>/remove/",
+        "cars/<int:pk>/remove/",
         views.remove_driver,
         name="car-remove-driver"
     ),
